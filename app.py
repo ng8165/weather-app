@@ -1,5 +1,6 @@
 import requests
-from PyQt6.QtWidgets import QApplication, QWidget
+# import sys
+# from PyQt6.QtWidgets import *
 
 location = input("Enter location: ")
 
@@ -15,3 +16,8 @@ for i in range(14):
     print(day["name"] + ": ", end="")
     print(str(day["temperature"]) + "°" + day["temperatureUnit"] + ", ", end="")
     print(day["shortForecast"])
+
+# app = QApplication(sys.argv)
+# root = QWidget()
+# root.show()
+# sys.exit(app.exec())
